@@ -1,0 +1,53 @@
+#!/bin/sh
+#
+# Very simpe motors control script. Not uses PWM. Ussage:
+#
+# motor <d1> <d2>
+#
+# d1, d1 are M1 and M2 directions (single caracter).
+#
+# f - forward
+# b - backward
+# s (or other) - stop
+#
+# motor f f   - M1 forward, M2 forward
+# motor f b   - M1 forward, M2 backward
+# motot s s   - poth motor stop
+#
+# Seee detal description of Pololu DRV8835 dual motor driver
+# https://www.pololu.com/product/2135
+#
+echo out > /sys/class/gpio/gpio23/direction
+echo out > /sys/class/gpio/gpio24/direction
+echo out > /sys/class/gpio/gpio25/direction
+echo out > /sys/class/gpio/gpio26/direction
+
+if [ "0x$1" = "0xf" ]
+then
+        echo 0 >/sys/class/gpio/gpio24/value
+        echo 1 >/sys/class/gpio/gpio23/value
+else
+        if [ "0x$1" = "0xb" ]
+        then
+                echo 1 >/sys/class/gpio/gpio24/value
+                echo 1 >/sys/class/gpio/gpio23/value
+        else
+                echo 0 >/sys/class/gpio/gpio24/value
+                echo 0 >/sys/class/gpio/gpio23/value
+        fi
+fi
+
+if [ "0x$2" = "0xf" ]
+then
+        echo 0 >/sys/class/gpio/gpio26/value
+        echo 1 >/sys/class/gpio/gpio25/value
+else
+        if [ "0x$2" = "0xb" ]
+        then
+                echo 1 >/sys/class/gpio/gpio26/value
+                echo 1 >/sys/class/gpio/gpio25/value
+        else
+                echo 0 >/sys/class/gpio/gpio26/value
+                echo 0 >/sys/class/gpio/gpio25/value
+        fi
+fi
