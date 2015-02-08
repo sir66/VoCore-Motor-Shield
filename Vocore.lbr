@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="VOCORE_DOC_CUSTOM">
+<wire x1="0" y1="0" x2="0" y2="25.6032" width="0.127" layer="21"/>
+<wire x1="0" y1="25.6032" x2="25.6032" y2="25.6032" width="0.127" layer="21"/>
+<wire x1="25.6032" y1="25.6032" x2="25.6032" y2="0" width="0.127" layer="21"/>
+<wire x1="25.6032" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="G#14/PCM_TDX" x="0.889" y="1.778" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#26/LED4" x="0.889" y="3.048" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#25/LED3" x="0.889" y="4.318" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#24/LED2" x="0.889" y="5.588" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#13/PCM_DRX" x="0.889" y="6.858" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#23/LED1" x="0.889" y="8.128" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#27/SPI_CS1" x="0.889" y="9.398" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#05/SPI_MOSI" x="0.889" y="10.668" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#04/SPI_CLK" x="0.889" y="11.938" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="+1.8V" x="0.889" y="13.208" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#08/I2S_WS/TXD" x="0.889" y="14.478" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#22/LED0" x="0.889" y="15.748" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#09/I2S_SDO" x="0.889" y="17.018" drill="0.6" diameter="0.889" shape="octagon"/>
+<pad name="G#12/PCM_CLK" x="0.889" y="18.288" drill="0.6" diameter="0.889" shape="octagon"/>
+<hole x="0.889" y="1.778" drill="0.6"/>
+<hole x="0.889" y="3.048" drill="0.6"/>
+<hole x="0.889" y="4.318" drill="0.6"/>
+<hole x="0.889" y="5.588" drill="0.6"/>
+<hole x="0.889" y="6.858" drill="0.6"/>
+<hole x="0.889" y="8.128" drill="0.6"/>
+<hole x="0.889" y="9.398" drill="0.6"/>
+<hole x="0.889" y="10.668" drill="0.6"/>
+<hole x="0.889" y="11.938" drill="0.6"/>
+<hole x="0.889" y="13.208" drill="0.6"/>
+<hole x="0.889" y="14.478" drill="0.6"/>
+<hole x="0.889" y="15.748" drill="0.6"/>
+<hole x="0.889" y="17.018" drill="0.6"/>
+<hole x="0.889" y="18.288" drill="0.6"/>
+<hole x="8.2042" y="24.7142" drill="0.6"/>
+<pad name="GND" x="24.7142" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="RESET" x="23.4442" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#02/I2C_SD" x="22.1742" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#01/I2C_CLK" x="20.9042" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#18/JTAG_TDI" x="19.6342" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#00" x="18.3642" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#19/JTAG_TMS" x="17.0942" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#20/JTAG_TCLK" x="15.8242" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#21/JTAG_TRST" x="14.5542" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#17/JTAG_TDO" x="13.2842" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="GND1" x="12.0142" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="+6.0VIN1" x="10.7442" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="+6.0VIN" x="9.4742" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="GND2" x="8.2042" y="24.7142" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<hole x="24.7142" y="24.7142" drill="0.6"/>
+<hole x="23.4442" y="24.7142" drill="0.6"/>
+<hole x="22.1742" y="24.7142" drill="0.6"/>
+<hole x="20.9042" y="24.7142" drill="0.6"/>
+<hole x="19.6342" y="24.7142" drill="0.6"/>
+<hole x="18.3642" y="24.7142" drill="0.6"/>
+<hole x="17.0942" y="24.7142" drill="0.6"/>
+<hole x="15.8242" y="24.7142" drill="0.6"/>
+<hole x="14.5542" y="24.7142" drill="0.6"/>
+<hole x="13.2842" y="24.7142" drill="0.6"/>
+<hole x="12.0142" y="24.7142" drill="0.6"/>
+<hole x="10.7442" y="24.7142" drill="0.6"/>
+<hole x="9.4742" y="24.7142" drill="0.6"/>
+<hole x="1.778" y="0.889" drill="0.6"/>
+<pad name="P4TN" x="17.018" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P0RN" x="15.748" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P0RP" x="14.478" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P0TP" x="13.208" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P0TN" x="11.938" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#11/PCM_FS" x="10.668" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#03/SPI_CS0" x="9.398" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#06/SPI_MISO" x="8.128" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#10/I2S_SDI/RXD" x="6.858" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#16/RXD2" x="5.588" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#07/I2S_CLK" x="4.318" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="G#15/TXD2" x="3.048" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="GND3" x="1.778" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<hole x="18.288" y="0.889" drill="0.6"/>
+<hole x="17.018" y="0.889" drill="0.6"/>
+<hole x="15.748" y="0.889" drill="0.6"/>
+<hole x="14.478" y="0.889" drill="0.6"/>
+<hole x="13.208" y="0.889" drill="0.6"/>
+<hole x="11.938" y="0.889" drill="0.6"/>
+<hole x="10.668" y="0.889" drill="0.6"/>
+<hole x="9.398" y="0.889" drill="0.6"/>
+<hole x="8.128" y="0.889" drill="0.6"/>
+<hole x="6.858" y="0.889" drill="0.6"/>
+<hole x="5.588" y="0.889" drill="0.6"/>
+<hole x="4.318" y="0.889" drill="0.6"/>
+<hole x="3.048" y="0.889" drill="0.6"/>
+<pad name="+3.2V~+3.5V" x="24.638" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="USB+" x="23.368" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="USB-" x="22.098" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P4RN" x="20.828" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P4RP" x="19.558" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<pad name="P4TP" x="18.288" y="0.889" drill="0.6" diameter="0.889" shape="octagon" rot="R90"/>
+<hole x="24.638" y="0.889" drill="0.6"/>
+<hole x="23.368" y="0.889" drill="0.6"/>
+<hole x="22.098" y="0.889" drill="0.6"/>
+<hole x="20.828" y="0.889" drill="0.6"/>
+<hole x="19.558" y="0.889" drill="0.6"/>
+</package>
+</packages>
+<symbols>
+<symbol name="VOCORE_SHIELD_SCH">
+<pin name="GND" x="-48.26" y="-15.24" length="middle"/>
+<pin name="RESET" x="-48.26" y="45.72" length="middle"/>
+<pin name="G#02/I2C_SD" x="-48.26" y="35.56" length="middle"/>
+<pin name="G#01/I2C_CLK" x="-48.26" y="38.1" length="middle"/>
+<pin name="G#18/JTAG_TDI" x="7.62" y="10.16" length="middle" rot="R180"/>
+<pin name="G#00" x="-48.26" y="40.64" length="middle"/>
+<pin name="G#19/JTAG_TMS" x="7.62" y="12.7" length="middle" rot="R180"/>
+<pin name="G#20/JTAG_TCLK" x="7.62" y="15.24" length="middle" rot="R180"/>
+<pin name="G#21/JTAG_TRST" x="7.62" y="17.78" length="middle" rot="R180"/>
+<pin name="G#17/JTAG_TDO" x="7.62" y="7.62" length="middle" rot="R180"/>
+<pin name="GND1" x="-48.26" y="-10.16" length="middle"/>
+<pin name="+3.5V~+6.5V" x="-48.26" y="-5.08" length="middle"/>
+<pin name="+3.5V~+6.5V1" x="-48.26" y="-7.62" length="middle"/>
+<pin name="GND2" x="-48.26" y="-12.7" length="middle"/>
+<pin name="G#12/PCM_CLK" x="-48.26" y="10.16" length="middle"/>
+<pin name="G#09/I2S_SDO" x="-48.26" y="17.78" length="middle"/>
+<pin name="G#22/LED0" x="7.62" y="-5.08" length="middle" rot="R180"/>
+<pin name="G#08/I2S_WS/TXD" x="-48.26" y="20.32" length="middle"/>
+<pin name="+1.8V" x="-48.26" y="0" length="middle"/>
+<pin name="G#04/SPI_CLK" x="-48.26" y="30.48" length="middle"/>
+<pin name="G#05/SPI_MOSI" x="-48.26" y="27.94" length="middle"/>
+<pin name="G#27/SPI_CS1" x="7.62" y="-17.78" length="middle" rot="R180"/>
+<pin name="G#23/LED1" x="7.62" y="-7.62" length="middle" rot="R180"/>
+<pin name="G#13/PCM_DRX" x="-48.26" y="7.62" length="middle"/>
+<pin name="G#24/LED2" x="7.62" y="-10.16" length="middle" rot="R180"/>
+<pin name="G#25/LED3" x="7.62" y="-12.7" length="middle" rot="R180"/>
+<pin name="G#26/LED4" x="7.62" y="-15.24" length="middle" rot="R180"/>
+<pin name="G#14/PCM_TDX" x="-48.26" y="5.08" length="middle"/>
+<pin name="GND3" x="-48.26" y="-17.78" length="middle"/>
+<pin name="G#15/TXD2" x="7.62" y="0" length="middle" rot="R180"/>
+<pin name="G#07/I2S_CLK" x="-48.26" y="22.86" length="middle"/>
+<pin name="G#16/RXD2" x="7.62" y="-2.54" length="middle" rot="R180"/>
+<pin name="G#10/I2S_SDI/RXD" x="-48.26" y="15.24" length="middle"/>
+<pin name="G#06/SPI_MISO" x="-48.26" y="25.4" length="middle"/>
+<pin name="G#03/SPI_CS0" x="-48.26" y="33.02" length="middle"/>
+<pin name="G#11/PCM_FS" x="-48.26" y="12.7" length="middle"/>
+<pin name="P0TN" x="7.62" y="22.86" length="middle" rot="R180"/>
+<pin name="P0TP" x="7.62" y="25.4" length="middle" rot="R180"/>
+<pin name="P0RP" x="7.62" y="27.94" length="middle" rot="R180"/>
+<pin name="P0RN" x="7.62" y="30.48" length="middle" rot="R180"/>
+<pin name="P4TN" x="7.62" y="33.02" length="middle" rot="R180"/>
+<pin name="P4TP" x="7.62" y="35.56" length="middle" rot="R180"/>
+<pin name="P4RP" x="7.62" y="38.1" length="middle" rot="R180"/>
+<pin name="P4RN" x="7.62" y="40.64" length="middle" rot="R180"/>
+<pin name="USB-" x="7.62" y="43.18" length="middle" rot="R180"/>
+<pin name="USB+" x="7.62" y="45.72" length="middle" rot="R180"/>
+<pin name="+3.2V~+3.5VIN/OUT" x="-48.26" y="-2.54" length="middle"/>
+<wire x1="-43.18" y1="48.26" x2="-20.32" y2="48.26" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="48.26" x2="2.54" y2="48.26" width="0.254" layer="94"/>
+<wire x1="2.54" y1="48.26" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-20.32" x2="-43.18" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="-20.32" x2="-43.18" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="2.54" x2="-43.18" y2="43.18" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="43.18" x2="-43.18" y2="48.26" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="43.18" x2="-20.32" y2="43.18" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="43.18" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="20.32" x2="-20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="2.54" x2="-43.18" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="43.18" x2="-20.32" y2="48.26" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="2.54" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<text x="-25.4" y="50.8" size="2.54" layer="94">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VOCORE_SHIELD">
+<gates>
+<gate name="G$1" symbol="VOCORE_SHIELD_SCH" x="48.26" y="-45.72"/>
+</gates>
+<devices>
+<device name="" package="VOCORE_DOC_CUSTOM">
+<connects>
+<connect gate="G$1" pin="+1.8V" pad="+1.8V"/>
+<connect gate="G$1" pin="+3.2V~+3.5VIN/OUT" pad="+3.2V~+3.5V"/>
+<connect gate="G$1" pin="+3.5V~+6.5V" pad="+6.0VIN"/>
+<connect gate="G$1" pin="+3.5V~+6.5V1" pad="+6.0VIN1"/>
+<connect gate="G$1" pin="G#00" pad="G#00"/>
+<connect gate="G$1" pin="G#01/I2C_CLK" pad="G#01/I2C_CLK"/>
+<connect gate="G$1" pin="G#02/I2C_SD" pad="G#02/I2C_SD"/>
+<connect gate="G$1" pin="G#03/SPI_CS0" pad="G#03/SPI_CS0"/>
+<connect gate="G$1" pin="G#04/SPI_CLK" pad="G#04/SPI_CLK"/>
+<connect gate="G$1" pin="G#05/SPI_MOSI" pad="G#05/SPI_MOSI"/>
+<connect gate="G$1" pin="G#06/SPI_MISO" pad="G#06/SPI_MISO"/>
+<connect gate="G$1" pin="G#07/I2S_CLK" pad="G#07/I2S_CLK"/>
+<connect gate="G$1" pin="G#08/I2S_WS/TXD" pad="G#08/I2S_WS/TXD"/>
+<connect gate="G$1" pin="G#09/I2S_SDO" pad="G#09/I2S_SDO"/>
+<connect gate="G$1" pin="G#10/I2S_SDI/RXD" pad="G#10/I2S_SDI/RXD"/>
+<connect gate="G$1" pin="G#11/PCM_FS" pad="G#11/PCM_FS"/>
+<connect gate="G$1" pin="G#12/PCM_CLK" pad="G#12/PCM_CLK"/>
+<connect gate="G$1" pin="G#13/PCM_DRX" pad="G#13/PCM_DRX"/>
+<connect gate="G$1" pin="G#14/PCM_TDX" pad="G#14/PCM_TDX"/>
+<connect gate="G$1" pin="G#15/TXD2" pad="G#15/TXD2"/>
+<connect gate="G$1" pin="G#16/RXD2" pad="G#16/RXD2"/>
+<connect gate="G$1" pin="G#17/JTAG_TDO" pad="G#17/JTAG_TDO"/>
+<connect gate="G$1" pin="G#18/JTAG_TDI" pad="G#18/JTAG_TDI"/>
+<connect gate="G$1" pin="G#19/JTAG_TMS" pad="G#19/JTAG_TMS"/>
+<connect gate="G$1" pin="G#20/JTAG_TCLK" pad="G#20/JTAG_TCLK"/>
+<connect gate="G$1" pin="G#21/JTAG_TRST" pad="G#21/JTAG_TRST"/>
+<connect gate="G$1" pin="G#22/LED0" pad="G#22/LED0"/>
+<connect gate="G$1" pin="G#23/LED1" pad="G#23/LED1"/>
+<connect gate="G$1" pin="G#24/LED2" pad="G#24/LED2"/>
+<connect gate="G$1" pin="G#25/LED3" pad="G#25/LED3"/>
+<connect gate="G$1" pin="G#26/LED4" pad="G#26/LED4"/>
+<connect gate="G$1" pin="G#27/SPI_CS1" pad="G#27/SPI_CS1"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="P0RN" pad="P0RN"/>
+<connect gate="G$1" pin="P0RP" pad="P0RP"/>
+<connect gate="G$1" pin="P0TN" pad="P0TN"/>
+<connect gate="G$1" pin="P0TP" pad="P0TP"/>
+<connect gate="G$1" pin="P4RN" pad="P4RN"/>
+<connect gate="G$1" pin="P4RP" pad="P4RP"/>
+<connect gate="G$1" pin="P4TN" pad="P4TN"/>
+<connect gate="G$1" pin="P4TP" pad="P4TP"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="USB+" pad="USB+"/>
+<connect gate="G$1" pin="USB-" pad="USB-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
